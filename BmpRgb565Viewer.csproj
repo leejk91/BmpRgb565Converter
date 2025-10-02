@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net9.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+
+		<PublishSingleFile>true</PublishSingleFile>
+		<SelfContained>true</SelfContained>
+		<!-- 한 개만 쓸 땐 RuntimeIdentifier -->
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<!-- 여러 개 타깃이면 RuntimeIdentifiers 사용: <RuntimeIdentifiers>win-x64;win-x86;win-arm64</RuntimeIdentifiers> -->
+
+		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+		<DebugType>none</DebugType>
+		<GenerateDocumentationFile>false</GenerateDocumentationFile>
+		<SatelliteResourceLanguages>ko</SatelliteResourceLanguages>
+	</PropertyGroup>
+
+</Project>
